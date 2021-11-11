@@ -1,0 +1,93 @@
+
+.invoice-head {
+    padding: 10px;
+    background: var(--color2);
+    color: var(--color1);
+    font: 16px f2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.invoice-head p {
+    margin: 0;
+}
+
+.invoice {
+    display: flex;
+    justify-content: stretch;
+}
+
+.invoice-pay, .invoice-desc {
+    width: 100%;
+}
+
+.invoice-pay {
+    text-align: center;
+    padding: 20px;
+}
+
+.invoice-pay-list {
+    height: 50px;
+    margin: 20px 0;
+}
+
+.invoice-qr img {
+    margin: auto;
+    display: block;
+    max-width: 300px;
+}
+
+.invoice-qr a {
+    margin: 20px auto;
+    display: block;
+    width: fit-content;
+    box-sizing: content-box;
+    color: var(--color2);
+    font: 14px f2;
+    padding: 10px 15px;
+    border: 2px solid var(--color2);
+    text-decoration: none;
+}
+
+.invoice-paid {
+    display: block;
+    padding: 10px;
+    max-width: 400px;
+    margin: 10px auto;
+    background: var(--color2);
+    color: var(--color1);
+    font: 16px f2;
+    border: 2px solid var(--color2);
+    transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    -o-transition: background 0.5s;
+}
+
+.invoice-paid:hover {
+    background: none;
+    color: var(--color2);
+}
+
+.invoice-desc {
+    padding: 20px;
+}
+
+.invoice-desc h5 {
+    font: 16px f2;
+}
+
+.invoice-desc p {
+    font: 16px f1;
+}
+
+@media only screen and (max-width: 768px) {
+    .invoice-head {
+        margin: 0 20px;
+        flex-direction: column;
+    }
+    .invoice {
+        flex-direction: column;
+    }
+}

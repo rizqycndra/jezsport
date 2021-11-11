@@ -12,6 +12,7 @@
 @import url(product.css);
 @import url(checkout.css);
 @import url(payment.css);
+@import url(invoice.css);
 
 :root {
     --color1: #f2f2f2;
@@ -46,6 +47,10 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+img {
+    max-width: 100%;
 }
 
 .display-mobile {

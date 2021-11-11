@@ -1,9 +1,9 @@
 @font-face {
     font-family: f1;
-    src: url(../font/Anybody-ExtraExpandedRegular.woff);
+    src: url(../font/Montserrat-Regular.ttf);
 }
 
 @font-face {
     font-family: f2;
-    src: url(../font/Anybody-ExtraExpandedSemiBold.woff);
+    src: url(../font/Montserrat-SemiBold.ttf);
 }
