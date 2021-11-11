@@ -1,3 +1,5 @@
+<?php include_once "data/template/notification.php"; ?>
+
 <div class="nav-c">
     <div class="nav-left">
         <a href="/" class="nav-brand">

@@ -15,10 +15,12 @@ function scrollFunction() {
         $('.nav-c').css('height', '50px');
         $('.nav-brand').css('height', '25px');
         $('.nav-btn').css('font-size', '14px');
+        $('.notif').css('top', '60px');
     } else {
         $('.nav-c').css('height', '80px');
         $('.nav-brand').css('height', '35px');
         $('.nav-btn').css('font-size', '16px');
+        $('.notif').css('top', '90px');
     }
 }
 
@@ -46,4 +48,8 @@ function controlCart(action) {
     } else {
         $('.cart-item-del').toggle();
     }
+}
+
+function addNotif(message) {
+    $('.notif-container').html('<div class="notif">'+message+'</div>')
 }

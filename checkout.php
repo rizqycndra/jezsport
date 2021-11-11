@@ -13,7 +13,7 @@
         </div>
         <div class="checkout">
             <div class="checkout-form">
-                <form action="#" class="jez-input">
+                <form action="invoice" class="jez-input">
                     <label>Nama Penerima</label>
                     <input type="text" name="" placeholder="Bro Jez">
                     <label>No Telp. & Whatsapp</label>

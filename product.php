@@ -30,7 +30,7 @@
                     <option value="l">L</option>
                 </select>
             </div>
-            <a href="checkout.html">Tambah Ke Keranjang</a>
+            <a href="checkout">Tambah Ke Keranjang</a>
         </div>
     </div>
 
@@ -39,22 +39,22 @@
             <h2>Produk Serupa</h2>
         </div>
         <div class="catalog">
-            <a href="#" class="catalog-item">
+            <a href="product" class="catalog-item">
                 <img src="img/product/00001.png" alt="">
                 <h4>Real Madrid 21-22 HOME</h4>
                 <p><strike>RP 150.000</strike> ‣ RP 100.000</p>
             </a>
-            <a href="#" class="catalog-item">
+            <a href="product" class="catalog-item">
                 <img src="img/product/00001.png" alt="">
                 <h4>Real Madrid 21-22 HOME</h4>
                 <p><strike>RP 150.000</strike> ‣ RP 100.000</p>
             </a>
-            <a href="#" class="catalog-item">
+            <a href="product" class="catalog-item">
                 <img src="img/product/00001.png" alt="">
                 <h4>Real Madrid 21-22 HOME</h4>
                 <p><strike>RP 150.000</strike> ‣ RP 100.000</p>
             </a>
-            <a href="#" class="catalog-item">
+            <a href="product" class="catalog-item">
                 <img src="img/product/00001.png" alt="">
                 <h4>Real Madrid 21-22 HOME</h4>
                 <p><strike>RP 150.000</strike> ‣ RP 100.000</p>
@@ -67,22 +67,22 @@
             <h2>Produk Lainnya</h2>
         </div>
         <div class="catalog">
-            <a href="#" class="catalog-item">
+            <a href="product" class="catalog-item">
                 <img src="img/product/00001.png" alt="">
                 <h4>Real Madrid 21-22 HOME</h4>
                 <p><strike>RP 150.000</strike> ‣ RP 100.000</p>
             </a>
-            <a href="#" class="catalog-item">
+            <a href="product" class="catalog-item">
                 <img src="img/product/00001.png" alt="">
                 <h4>Real Madrid 21-22 HOME</h4>
                 <p><strike>RP 150.000</strike> ‣ RP 100.000</p>
             </a>
-            <a href="#" class="catalog-item">
+            <a href="product" class="catalog-item">
                 <img src="img/product/00001.png" alt="">
                 <h4>Real Madrid 21-22 HOME</h4>
                 <p><strike>RP 150.000</strike> ‣ RP 100.000</p>
             </a>
-            <a href="#" class="catalog-item">
+            <a href="product" class="catalog-item">
                 <img src="img/product/00001.png" alt="">
                 <h4>Real Madrid 21-22 HOME</h4>
                 <p><strike>RP 150.000</strike> ‣ RP 100.000</p>
