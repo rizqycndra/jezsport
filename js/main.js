@@ -4,10 +4,10 @@ window.onscroll = function() {
 
 if ($(window).width() < 768) {
     $('.cart').addClass('cart-mo');
-    $('.cart').css('transform', 'translateY(100%)');
+    $('.cart-mo').css('transform', 'translateY(100%)');
 } else {
     $('.cart').addClass('cart-pc');
-    $('.cart').css('transform', 'translateX(100%)');
+    $('.cart-pc').css('transform', 'translateX(100%)');
 }
 
 function scrollFunction() {
