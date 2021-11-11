@@ -1,0 +1,184 @@
+
+.checkout {
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+}
+
+.checkout-form {
+    width: 100%;
+}
+
+.checkout-detail {
+    border-radius: 20px;
+    height: 500px;
+    margin-left: 40px;
+    width: 100%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.checkout-detail h4 {
+    font: 16px f2;
+    margin: 10px 0;
+}
+
+.checkout-detail h5 {
+    cursor: pointer;
+    font: 12px f1;
+    margin: 20px 0 10px;
+}
+
+.checkout-d-item img {
+    width: 50px;
+}
+
+.checkout-d-item a {
+    background: var(--color2-4);
+    color: var(--color2);
+    margin-bottom: 10px;
+    display: flex;
+    padding: 20px;
+}
+
+.checkout-d-item div {
+    margin-left: 10px;
+}
+
+.checkout-d-item p {
+    font: 16px f2;
+    margin: 0;
+}
+
+.checkout-d-item span {
+    font: 12px f1;
+}
+
+.jez-input-case {
+    margin: 10px 0;
+}
+
+.jez-input input {
+    text-transform: capitalize;
+    margin: 10px 0;
+    font: 16px f1;
+    display: block;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 10px 12px;
+    border: 1px solid var(--color2-2);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.jez-input select {
+    margin: 10px 0;
+    cursor: pointer;
+    font: 16px f1;
+    display: block;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 10px 12px;
+    border: 1px solid var(--color2-2);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.jez-input textarea {
+    resize: vertical;
+    margin: 10px 0;
+    font: 16px f1;
+    display: block;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 10px 12px;
+    border: 1px solid var(--color2-2);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.jez-input span {
+    display: block;
+    font: 14px f1;
+    margin-bottom: 20px;
+}
+
+.jez-input input:hover,
+.jez-input select:hover,
+.jez-input textarea:hover {
+    background: var(--color2-5);
+}
+
+.jez-input [type=email] {
+    text-transform: lowercase !important;
+}
+
+.jez-input [type=submit] {
+    margin-top: 20px;
+    font: 16px f2;
+    border: 2px solid var(--color2);
+    cursor: pointer;
+    background: var(--color2);
+    color: var(--color1);
+    transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    -o-transition: background 0.5s;
+}
+
+.jez-input [type=submit]:hover {
+    background: none;
+    color: var(--color2);
+}
+
+.jez-input label {
+    display: block;
+    font: 16px f1;
+}
+
+.jez-input-2 {
+    display: grid;
+    grid-template-columns:
+        calc(100% / 2 - 20px / 2)
+        calc(100% / 2 - 20px / 2)
+    ;
+    grid-column-gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .checkout {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .checkout-detail {
+        margin-left: 0 !important;
+        margin: 20px 0;
+    }
+    .jez-input [type=submit] {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 40px);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
+}

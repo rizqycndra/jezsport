@@ -1,0 +1,5 @@
+RewriteEngine On 
+
+RewriteRule ^product/([0-9]+)/([0-9a-zA-z]+) product.php?id=$1&name=$2 [NC]
+
+ErrorDocument 404 /error/404.php

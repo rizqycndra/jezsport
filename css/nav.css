@@ -1,0 +1,126 @@
+.nav-c {
+    z-index: 100;
+    overflow-x: hidden;
+    color: var(--color2);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 80px;
+    background: var(--color1);
+    border-bottom: 1px solid var(--color2-2);
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    -o-transition: height 0.5s;
+}
+
+.nav-c a {
+    color: var(--color2);
+}
+
+.nav-c marquee {
+    height: fit-content;
+    margin-left: 20px;
+    font: 16px f2;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    -o-transition: height 0.5s;
+}
+
+.nav-brand img {
+    height: 100%;
+}
+
+.nav-btn {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: nowrap;
+    text-transform: capitalize;
+    font: 16px f1;
+    transition: font-size 0.5s;
+    -webkit-transition: font-size 0.5s;
+    -moz-transition: font-size 0.5s;
+    -ms-transition: font-size 0.5s;
+    -o-transition: font-size 0.5s;
+}
+
+.nav-btn a {
+    color: var(--color2);
+    margin-left: 40px;
+}
+
+.nav-btn a:hover {
+    text-decoration: underline;
+}
+
+.nav-btn-icon a {
+    color: var(--color2);
+    margin-left: 20px;
+}
+
+.nav-btn-icon a:hover {
+    opacity: 0.65;
+}
+
+.nav-empty {
+    height: 80px;
+}
+
+#navSearch {
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+}
+
+#navSearchValue {
+    margin: 0;
+    padding: 5px;
+    display: none;
+    width: 0;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid var(--color2-2);
+    background: var(--color1);
+    margin-right: 10px;
+}
+
+#navSearch:hover #navSearchValue {
+    display: block;
+    width: 200px;
+}
+
+#navSearchValue:focus {
+    display: block;
+    width: 200px;
+}
+
+#navSearch [type=submit] {
+    display: none;
+}

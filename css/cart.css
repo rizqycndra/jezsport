@@ -1,0 +1,130 @@
+.cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    background: var(--color1);
+    color: var(--color2);
+    z-index: 110;
+    transition: transform 0.5s;
+    position: fixed;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+
+.cart-pc {
+    padding: 10px;
+    height: 100%;
+    width: 300px;
+    top: 0;
+    right: 0;
+}
+
+.cart-mo {
+    padding: 10px;
+    bottom: 0;
+    height: fit-content;
+    max-height: calc(100% - 40px);
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.cart-head {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    height: 40px;
+}
+
+.cart-head p {
+    width: 100%;
+    font: 16px f2;
+    margin-left: 10px;
+    margin-bottom: 0 !important;
+}
+
+.cart-head svg {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.cart-item {
+    height: 100%;
+    margin-top: 10px;
+    overflow-y: auto;
+}
+
+.cart-item a {
+    padding: 10px;
+    display: flex;
+    justify-content: stretch;
+    background: var(--color2-4);
+    border-radius: 7px;
+    margin: 10px 0;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.cart-item-img {
+    margin-right: 10px;
+}
+
+.cart-item-img img {
+    width: 50px;
+    height: 50px;
+}
+
+.cart-item-desc {
+    width: 100%;
+    color: var(--color2);
+}
+
+.cart-item-desc p {
+    font: 16px f2;
+    margin-bottom: 0 !important;
+}
+
+.cart-item-desc span {
+    font: 12px f1;
+}
+
+.cart-item-del {
+    display: none;
+    color: var(--color3);
+}
+
+.cart-foot {
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cart-foot p {
+    width: 100%;
+    font: 16px f2;
+    margin-bottom: 10px !important;
+}
+
+.cart-btn {
+    text-align: center;
+    display: block;
+    background: var(--color2);
+    color: var(--color1);
+    font: 16px f2;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid var(--color2);
+    transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    -o-transition: background 0.5s;
+}
+
+.cart-btn:hover {
+    background: none;
+    color: var(--color2);
+}

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+    <title>Jezsport - Toko Jersey Online Bandung - Murah Dan Berkualitas</title>
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="semantic/semantic.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+</head>
+<body>
+
+    <div class="nav-c">
+        <div class="nav-left">
+            <a href="/" class="nav-brand">
+                <img src="img/logo-1.svg" alt="" class="display-mobile-hidden" title="Jezstore - Toko Jersey Online">
+                <img src="img/logo-2.svg" alt="" class="display-mobile" title="Jezstore - Toko Jersey Online">
+            </a>
+            <div class="nav-btn display-mobile-hidden">
+                <a href="#" title="Promo Terbaru Dari Jezstore">promo</a>
+                <a href="#" title="Artikel Terbaru Dari Jezstore">artikel</a>
+                <a href="#" title="Produk Terbaru Dari Jezstore">terbaru</a>
+                <a href="#" title="Produk Klasik Dari Jezstore">klasik</a>
+                <a href="#" title="Aksesoris Olahraga Dari Jezstore">aksesoris</a>
+            </div>
+        </div>
+        <marquee class="display-mobile" direction="left" >
+            <a href="#">
+                Selamat Datang Di Jezstore.com #BroJez
+            </a>
+        </marquee>
+        <div class="nav-right">
+            <div class="nav-btn nav-btn-icon">
+                <a title="Cari Produk" id="navSearch" class="display-mobile-hidden">
+                    <form action="search">
+                        <input type="text" id="navSearchValue" class="nav-search-input display-mobile-hidden" placeholder=" Cari Produk">
+                        <input type="submit">
+                    </form>
+                    <span class="iconify display-mobile-hidden" data-height="25" data-icon="ant-design:search-outlined"></span>
+                </a>
+                <a title="Lihat Keranjang" onclick="controlCart('show')">
+                    <span class="iconify" data-height="25" data-icon="akar-icons:shopping-bag"></span>
+                </a>
+                <a title="Menu" class="display-mobile" onclick="controlMenu('show')">
+                    <span class="iconify" data-height="25" data-icon="gg:menu"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="nav-empty"></div>
+
+    <div class="menu">
+        <div class="menu-head">
+            <p>Menu</p>
+            <div onclick="controlMenu('close')">
+                <span class="iconify" data-icon="gg:close" data-height="25"></span>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a>
+                <span class="iconify" data-height="25" data-icon="ant-design:search-outlined"></span>
+                <input type="text" id="" class="menu-search" placeholder="Cari Produk...">
+            </a>
+            <div class="menu-item-gap"></div>
+            <a href="#">
+                <span class="iconify" data-height="25" data-icon="ps:promo"></span>
+                <p>Promo</p>
+            </a>
+            <a href="#">
+                <span class="iconify" data-height="25" data-icon="ic:outline-article"></span>
+                <p>Artikel</p>
+            </a>
+            <div class="menu-item-gap"></div>
+            <a href="#">
+                <span class="iconify" data-height="25" data-icon="entypo:dot-single"></span>
+                <p>Terbaru</p>
+            </a>
+            <a href="#">
+                <span class="iconify" data-height="25" data-icon="entypo:dot-single"></span>
+                <p>Klasik</p>
+            </a>
+            <a href="#">
+                <span class="iconify" data-height="25" data-icon="entypo:dot-single"></span>
+                <p>Aksesoris</p>
+            </a>
+            <div class="menu-item-gap"></div>
+            <a onclick="controlCart('show')">
+                <span class="iconify" data-height="25" data-icon="akar-icons:shopping-bag"></span>
+                <p>Keranjang (0)</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="cart">
+        <div class="cart-head">
+            <p>Keranjang</p>
+            <div onclick="controlCart('edit')">
+                <span class="iconify" data-icon="clarity:note-edit-line" data-height="25"></span>
+            </div>
+            <div onclick="controlCart('close')">
+                <span class="iconify" data-icon="gg:close" data-height="25"></span>
+            </div>
+        </div>
+        <div class="cart-item">
+            <a>
+                <div class="cart-item-img">
+                    <img src="img/product/00001.png" alt="">
+                </div>
+                <div class="cart-item-desc">
+                    <p>Real Madrid 21-22 HOME</p>
+                    <span><strike>RP 150.000</strike> ‣ RP 100.000</span>
+                </div>
+                <div class="cart-item-del">
+                    <span class="iconify" data-icon="ant-design:delete-outlined" data-height="25"></span>
+                </div>
+            </a>
+            <a>
+                <div class="cart-item-img">
+                    <img src="img/product/00001.png" alt="">
+                </div>
+                <div class="cart-item-desc">
+                    <p>Real Madrid 21-22 HOME</p>
+                    <span><strike>RP 150.000</strike> ‣ RP 100.000</span>
+                </div>
+                <div class="cart-item-del">
+                    <span class="iconify" data-icon="ant-design:delete-outlined" data-height="25"></span>
+                </div>
+            </a>
+            <a>
+                <div class="cart-item-img">
+                    <img src="img/product/00001.png" alt="">
+                </div>
+                <div class="cart-item-desc">
+                    <p>Real Madrid 21-22 HOME</p>
+                    <span><strike>RP 150.000</strike> ‣ RP 100.000</span>
+                </div>
+                <div class="cart-item-del">
+                    <span class="iconify" data-icon="ant-design:delete-outlined" data-height="25"></span>
+                </div>
+            </a>
+            <a>
+                <div class="cart-item-img">
+                    <img src="img/product/00001.png" alt="">
+                </div>
+                <div class="cart-item-desc">
+                    <p>Real Madrid 21-22 HOME</p>
+                    <span><strike>RP 150.000</strike> ‣ RP 100.000</span>
+                </div>
+                <div class="cart-item-del">
+                    <span class="iconify" data-icon="ant-design:delete-outlined" data-height="25"></span>
+                </div>
+            </a>
+        </div>
+        <div class="cart-foot">
+            <p>Total RP 250.000</p>
+            <a href="#" class="cart-btn">Beli (3)</a>
+        </div>
+    </div>
+
+    <div class="container-half">
+        <div class="title title-left">
+            <h2>Form Pengiriman</h2>
+        </div>
+        <div class="checkout">
+            <div class="checkout-form">
+                <form action="#" class="jez-input">
+                    <label>Nama Penerima</label>
+                    <input type="text" name="" placeholder="Bro Jez">
+                    <label>No Telp. & Whatsapp</label>
+                    <input type="number" name="" placeholder="08XX XXXX XXXX">
+                    <label>Email</label>
+                    <input type="email" name="" placeholder="brojez@jezsport.com">
+                    <label>Alamat</label>
+                    <textarea name="" rows="5" placeholder="Alamat Tujuan Pengiriman"></textarea>
+                    <div class="jez-input-2">
+                        <div>
+                            <label>Provinsi</label>
+                            <select name="" id="getProvince">
+                                <option value="">Pilih Provinsi</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Kota</label>
+                            <select name="" id="getCity" class="disabled">
+                                <option value="">Pilih Kota</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="jez-input-2">
+                        <div>
+                            <label>Kurir</label>
+                            <select name="" id="getCourier" class="disabled">
+                                <option value="">Pilih Kurir Pengiriman</option>
+                                <option value="jne">JNE</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Pelayanan</label>
+                            <select name="" id="getService" class="disabled">
+                                <option value="">Pilih Jenis Layanan</option>
+                            </select>
+                        </div>
+                    </div>
+                    <span id="getCourierDetail"></span>
+                    <label>Metode Pembayaran</label>
+                    <select name="" id="">
+                        <option value="">Pilih Metode Pembayaran</option>
+                        <option value="qris">QRIS (DANA, GOPAY, SHOPEEPAY)</option>
+                        <option value="tva">Transfer Virtual Account</option>
+                        <option value="cstore">Indomaret</option>
+                    </select>
+                    <input type="hidden" name="voucher" id="checkoutVoucher">
+                    <input type="submit" value="Bayar">
+                </form>
+            </div>
+
+            <script>
+
+                $('#getProvince').load('data/checkout-get/province.php');
+                $('#getProvince').change(function(){
+                    $('#getCity').removeClass('disabled');
+                    if (this.value == '') {
+                        $('#getCity').addClass('disabled');
+                        $('#getCity').html('<option value="">Pilih Kota</option>');
+                    } else {
+                        $('#getCity').load('data/checkout-get/city.php?id='+this.value);
+                    }
+                    $('#getCourier').addClass('disabled');
+                    $('#getCourier').html('<option value="">Pilih Kurir Pengiriman</option><option value="jne">JNE</option>');
+                    $('#getService').addClass('disabled');
+                    $('#getService').html('<option value="">Pilih Jenis Layanan</option>');
+                    $('#getCourierDetail').text('');
+                });
+                $('#getCity').change(function(){
+                    $('#getCourier').removeClass('disabled');
+                    $('#getCourier').html('<option value="">Pilih Kurir Pengiriman</option><option value="jne">JNE</option>');
+                    $('#getService').addClass('disabled');
+                    $('#getService').html('<option value="">Pilih Jenis Layanan</option>');
+                    $('#getCourierDetail').text('');
+                });
+                $('#getCourier').change(function(){
+                    var destination = $('#getCity').val();
+                    $('#getService').removeClass('disabled');
+                    if (this.value == '') {
+                        $('#getService').addClass('disabled');
+                    }
+                    $('#getService').load('data/checkout-get/service.php?c='+this.value+'&id='+destination);
+                    $('#getCourierDetail').text('');
+                });
+                $('#getService').change(function(){
+                    if (this.value == '') {
+                        $('#getCourierDetail').text('');
+                    } else {
+                        var destination = $('#getCity').val();
+                        var courier = $('#getCourier').val();
+                        $('#getCourierDetail').load('data/checkout-get/price.php?detailp=1&id='+destination+'&c='+courier+'&s='+this.value)
+                    }
+                });
+
+            </script>
+
+            <div class="checkout-detail">
+                <div class="checkout-d-item">
+                    <a>
+                        <img src="img/product/00001.png" alt="">
+                        <div>
+                            <p>Real Madrid 21-22 HOME</p>
+                            <span><strike>RP 150.000</strike> ‣ RP 100.000, M</span>
+                        </div>
+                    </a>
+                    <a>
+                        <img src="img/product/00001.png" alt="">
+                        <div>
+                            <p>Real Madrid 21-22 HOME</p>
+                            <span><strike>RP 150.000</strike> ‣ RP 100.000, L</span>
+                        </div>
+                    </a>
+                    <a>
+                        <img src="img/product/00001.png" alt="">
+                        <div>
+                            <p>Real Madrid 21-22 HOME</p>
+                            <span><strike>RP 150.000</strike> ‣ RP 100.000, L</span>
+                        </div>
+                    </a>
+                </div>
+                <div id="addVoucher" class="jez-input">
+                    <h5>+ Voucher</h5>
+                    <input type="text" placeholder="Masukan Kode Voucher">
+                </div>
+                <h4>Total RP 300.000</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-half footer">
+        <div class="footer-brand">
+            <img src="img/logo-1.svg" alt="">
+            <h4>#OneChance - Just This One Chance</h4>
+            <p>Bandung, Indonesia</p>
+            <p>contact@jezsport.com</p>
+        </div>
+        <div class="footer-link">
+            <div class="footer-link-row">
+                <p>Koleksi</p>
+                <a href="#">Terbaru</a>
+                <a href="#">Klasik</a>
+                <a href="#">Aksesoris</a>
+            </div>
+            <div class="footer-link-row">
+                <p>Terhubung</p>
+                <a href="#">Kirim Pesan</a>
+                <a href="https://instagram.com/jezsport">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+            <div class="footer-link-row">
+                <p>Marketplace</p>
+                <a href="#">Lazada</a>
+                <a href="#">Tokopedia</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        if ($(window).width() < 768) {
+            $('.cart').addClass('cart-mo');
+            $('.cart').css('transform', 'translateY(100%)');
+        } else {
+            $('.cart').addClass('cart-pc');
+            $('.cart').css('transform', 'translateX(100%)');
+        }
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                $('.nav-c').css('height', '50px');
+                $('.nav-brand').css('height', '25px');
+                $('.nav-btn').css('font-size', '14px');
+            } else {
+                $('.nav-c').css('height', '80px');
+                $('.nav-brand').css('height', '35px');
+                $('.nav-btn').css('font-size', '16px');
+            }
+        }
+
+        function controlMenu(action) {
+            if (action == 'show') {
+                $('.menu').css('transform', 'translateX(0)');
+            } else {
+                $('.menu').css('transform', 'translateX(100%)');
+            }
+        }
+
+        function controlCart(action) {
+            if (action == 'show') {
+                if ($(window).width() < 768) {
+                    $('.cart-mo').css('transform', 'translateY(0)');
+                } else {
+                    $('.cart-pc').css('transform', 'translateX(0)');
+                }
+            } else if (action == 'close') {
+                if ($(window).width() < 768) {
+                    $('.cart-mo').css('transform', 'translateY(100%)');
+                } else {
+                    $('.cart-pc').css('transform', 'translateX(100%)');
+                }
+            } else {
+                $('.cart-item-del').toggle();
+            }
+        }
+
+    </script>
+</body>
+</html>

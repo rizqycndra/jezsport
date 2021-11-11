@@ -1,0 +1,13 @@
+.container-fullwidth {
+    width: 100%;
+}
+
+.container-full {
+    max-width: var(--mw1);
+    margin: auto;
+}
+
+.container-half {
+    max-width: var(--mw2);
+    margin: 30px auto;
+}

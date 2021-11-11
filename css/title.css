@@ -1,0 +1,24 @@
+
+.title {
+    font: 32px f2 !important;
+    margin: 40px 0;
+}
+
+.title h2 {
+    font: 32px f2 !important;
+}
+
+.title-center {
+    text-align: center;
+}
+
+.title-left {
+    text-align: left;
+}
+
+@media only screen and (max-width: 1024px) {
+    .title h2 {
+        padding: 0 20px;
+        font: 24px f2 !important;
+    }
+}

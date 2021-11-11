@@ -1,0 +1,55 @@
+
+Product Database
+
+id
+name
+title
+category
+varian
+tag
+desc
+stock
+price
+discount
+view
+addcart
+sell
+date
+
+Voucher Database
+
+code
+discount
+expired
+used
+active
+
+Transaction Database
+
+sessionid
+trid
+customerid
+method
+paid
+paymentcode
+expired
+product
+date
+
+Customer Database
+
+id
+name
+call
+email
+buyed
+
+User Database
+
+id
+name
+username
+password
+email
+rule:admin
+date

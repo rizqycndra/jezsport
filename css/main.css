@@ -1,0 +1,67 @@
+
+@import url(nav.css);
+@import url(menu.css);
+@import url(cart.css);
+@import url(font.css);
+@import url(container.css);
+@import url(title.css);
+@import url(banner.css);
+@import url(ctgr.css);
+@import url(catalog.css);
+@import url(footer.css);
+@import url(product.css);
+@import url(checkout.css);
+@import url(payment.css);
+
+:root {
+    --color1: #f2f2f2;
+    --color1-2: #f2f2f250;
+    --color2: #252525;
+    --color2-2: #25252550;
+    --color2-3: #25252520;
+    --color2-4: #25252508;
+    --color2-5: #25252505;
+    --color3: #da2d2d;
+    --color4: #ececec;
+    --mw1: 1366px;
+    --mw2: 1000px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: f1;
+    background: var(--color1);
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.display-mobile {
+    display: none !important;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5 !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .display-mobile {
+        display: block !important;
+    }
+    .display-mobile-hidden {
+        display: none !important;
+    }
+}

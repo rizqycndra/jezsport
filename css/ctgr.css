@@ -1,0 +1,66 @@
+.ctgr {
+    display: flex;
+    justify-content: stretch;
+}
+
+.ctgr-item {
+    width: 100%;
+    position: relative;
+    margin: 0 5px;
+}
+
+.ctgr-item:first-child {
+    margin: 0 5px 0 0;
+}
+
+.ctgr-item:last-child {
+    margin: 0 0 0 5px;
+}
+
+.ctgr-item img {
+    width: 100%;
+}
+
+.ctgr-btn {
+    border: 2px solid var(--color1);
+    text-align: center;
+    min-width: 60%;
+    padding: 7px 20px;
+    font: 16px f2;
+    z-index: 90;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    background: var(--color1);
+    color: var(--color2);
+    transition: background 0.5s;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    -o-transition: background 0.5s;
+}
+
+.ctgr-btn:hover {
+    background: none;
+    color: var(--color1);
+}
+
+@media only screen and (max-width: 768px) {
+    .ctgr {
+        flex-direction: column;
+    }
+    .ctgr-item {
+        margin: 5px 0;
+    }
+    .ctgr-item:first-child {
+        margin: 0 0 5px 0;
+    }
+    .ctgr-item:last-child {
+        margin: 5px 0 0 0;
+    }
+}
