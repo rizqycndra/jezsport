@@ -1,0 +1,77 @@
+
+.login {
+    width: calc(100% - 40px);
+    max-width: 380px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.login-head h1 {
+    text-align: center;
+    font: 24px a2;
+    margin-bottom: 20px;
+}
+
+.login-input div {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.login-input svg {
+    margin-left: 10px;
+}
+
+.login-input input {
+    border: 0;
+    font: 16px f1;
+    outline: none;
+    width: 100%;
+}
+
+.login-input [type=text],
+.login-input [type=password] {
+    background: none;
+    width: 100%;
+    margin-left: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--color2);
+}
+
+.login-input [type=submit] {
+    font: 16px f2;
+    border: 1px solid var(--color2);
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background: var(--color2);
+    color: var(--color1);
+    transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    -o-transition: background 0.5s;
+}
+
+.login-input [type=submit]:hover {
+    background: none;
+    color: var(--color2);
+}

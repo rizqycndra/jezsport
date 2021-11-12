@@ -7,3 +7,8 @@
     font-family: f2;
     src: url(../font/Montserrat-SemiBold.ttf);
 }
+
+@font-face {
+    font-family: a2;
+    src: url(../font/Anybody-ExtraExpandedSemiBold.woff);
+}

@@ -1,0 +1,42 @@
+
+@import url(../font.css);
+@import url(login.css);
+
+:root {
+    --color1: #f2f2f2;
+    --color1-2: #f2f2f250;
+    --color2: #252525;
+    --color2-2: #25252550;
+    --color2-3: #25252520;
+    --color2-4: #25252508;
+    --color2-5: #25252505;
+    --color3: #da2d2d;
+    --color4: #ececec;
+    --mw1: 1366px;
+    --mw2: 1000px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: f1;
+    background: var(--color1);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+img {
+    max-width: 100%;
+}
