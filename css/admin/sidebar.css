@@ -64,19 +64,6 @@
     -o-border-radius: 7px;
 }
 
-.sidebar-subbtn {
-    display: none;
-}
-
-.sidebar-subbtn a {
-    display: block;
-    margin: 0 20px;
-    padding: 7px 10px;
-    text-decoration: none;
-    font: 16px f1;
-    color: var(--color1);
-}
-
 .sidebar-subbtn a:hover {
     background: var(--color1-3);
 }
