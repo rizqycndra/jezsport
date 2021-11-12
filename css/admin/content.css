@@ -12,6 +12,12 @@
     text-transform: uppercase;
 }
 
+.chart-title {
+    margin-bottom: 20px;
+    font: 24px f1;
+    font-weight: lighter;
+}
+
 .box {
     width: 100%;
     margin: 5px;
