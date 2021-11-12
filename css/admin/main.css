@@ -2,11 +2,13 @@
 @import url(../font.css);
 @import url(login.css);
 @import url(sidebar.css);
+@import url(content.css);
 
 :root {
     --color1: #f2f2f2;
     --color1-2: #f2f2f250;
-    --color1-3: #f2f2f210;
+    --color1-3: #f2f2f220;
+    --color1-4: #f2f2f210;
     --color2: #252525;
     --color2-2: #25252550;
     --color2-3: #25252520;
@@ -14,6 +16,7 @@
     --color2-5: #25252505;
     --color3: #da2d2d;
     --color4: #e46f0f;
+    --color4-2: #a7520d;
     --mw1: 1366px;
     --mw2: 1000px;
 }
@@ -24,7 +27,7 @@ html {
 
 body {
     font-family: f1;
-    background: var(--color1);
+    background: var(--color2);
 }
 
 * {
