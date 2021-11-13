@@ -6,7 +6,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--color2);
+    border: 1px solid var(--color1);
     position: fixed;
     top: 50%;
     left: 50%;
@@ -25,6 +25,7 @@
     text-align: center;
     font: 24px a2;
     margin-bottom: 20px;
+    color: var(--color1);
 }
 
 .login-input div {
@@ -37,9 +38,11 @@
 
 .login-input svg {
     margin-left: 10px;
+    color: var(--color1);
 }
 
 .login-input input {
+    color: var(--color1);
     border: 0;
     font: 16px f1;
     outline: none;
@@ -52,18 +55,19 @@
     width: 100%;
     margin-left: 20px;
     padding-bottom: 5px;
-    border-bottom: 1px solid var(--color2);
+    border-bottom: 1px solid var(--color1);
 }
 
 .login-input [type=submit] {
+    border-radius: 7px;
     font: 16px f2;
-    border: 1px solid var(--color2);
+    border: 1px solid var(--color1);
     margin-top: 20px;
     padding: 10px;
     text-align: center;
     cursor: pointer;
-    background: var(--color2);
-    color: var(--color1);
+    background: var(--color1);
+    color: var(--color2);
     transition: background 0.5s;
     -webkit-transition: background 0.5s;
     -moz-transition: background 0.5s;
@@ -73,5 +77,5 @@
 
 .login-input [type=submit]:hover {
     background: none;
-    color: var(--color2);
+    color: var(--color1);
 }
