@@ -45,3 +45,13 @@ body {
 img {
     max-width: 100%;
 }
+
+.display-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .display-mobile {
+        display: block;
+    }
+}

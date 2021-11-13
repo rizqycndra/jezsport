@@ -12,6 +12,15 @@
     text-transform: uppercase;
 }
 
+.content-head {
+    display: flex;
+    align-items: center;
+}
+
+.content-head svg {
+    cursor: pointer;
+}
+
 .chart-title {
     margin-bottom: 20px;
     font: 24px f1;
@@ -140,16 +149,13 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .sidebar {
-        display: none;
-    }
     .content {
         margin: 20px;
         padding: 0;
     }
     .content h1 {
-        font: 32px f2;
-        margin: 20px 0;
+        font: 24px f2;
+        margin: 20px 0 20px 10px;
     }
     .box {
         margin: 5px 0;
