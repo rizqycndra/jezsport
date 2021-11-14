@@ -94,11 +94,23 @@
     margin-left: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
+    .order-item .row {
+        flex-direction: column !important;
+    }
     .order-tab {
         flex-direction: column;
     }
     .order-product {
         margin: 10px 0;
     }
+    .order-action {
+        width: 100%;
+    }
+    .order-id span {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
 }

@@ -10,7 +10,7 @@
     <div class="content">
         <div class="content-head">
             <span onclick="menuControl('show')" class="iconify display-mobile" data-icon="eva:menu-fill" data-height="30"></span>
-            <h1>Order</h1>
+            <h1>Product</h1>
         </div>
     </div>
 
