@@ -57,6 +57,7 @@
 
 .sidebar-btn:hover {
     background: var(--color1-3);
+    color: var(--color1);
 }
 
 .sidebar-btn-active {

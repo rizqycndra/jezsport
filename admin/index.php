@@ -1,64 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/admin/main.css">
-    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <?php include_once "../data/template/admin/head.php"; ?>
 </head>
 <body>
 
-    <div class="sidebar">
-        <div class="sidebar-head">
-            <img src="../img/logo-1.svg" alt="">
-            <span onclick="menuControl('close')" class="iconify display-mobile" data-icon="gg:close" data-height="30"></span>
-        </div>
-        <div class="sidebar-content">
-            <a class="sidebar-btn" onclick="dropdownSidebar()">
-                <span class="iconify" data-icon="bx:bxs-user-check" data-height="25"></span>
-                <p>Rizqycndra</p>
-            </a>
-            <div class="sidebar-content-gap"></div>
-            <a href="#" class="sidebar-btn sidebar-btn-active">
-                <span class="iconify" data-icon="ic:sharp-space-dashboard" data-height="25"></span>
-                <p>Dashboard</p>
-            </a>
-            <a href="#" class="sidebar-btn">
-                <span class="iconify" data-icon="bi:bag-fill" data-height="25"></span>
-                <p>Order</p>
-                <span class="sidebar-btn-label">3</span>
-            </a>
-            <div class="sidebar-content-gap"></div>
-            <a href="#" class="sidebar-btn">
-                <span class="iconify" data-icon="mdi:package" data-height="25"></span>
-                <p>Product</p>
-            </a>
-            <a href="#" class="sidebar-btn">
-                <span class="iconify" data-icon="bx:bxs-user-circle" data-height="25"></span>
-                <p>Customer</p>
-            </a>
-            <a href="#" class="sidebar-btn">
-                <span class="iconify" data-icon="ph:flag-banner-fill" data-height="25"></span>
-                <p>Banner</p>
-            </a>
-            <div class="sidebar-content-gap"></div>
-            <a href="#" class="sidebar-btn">
-                <span class="iconify" data-icon="ant-design:setting-filled" data-height="25"></span>
-                <p>Settings</p>
-            </a>
-            <a href="#" class="sidebar-btn" id="adminLogout">
-                <span class="iconify" data-icon="si-glyph:turn-off" data-height="25"></span>
-                <p>Logout</p>
-            </a>
-        </div>
-        <div class="sidebar-footer">
-            <p>V 1.0</p>
-        </div>
-    </div>
+    <?php include_once "../data/template/admin/sidebar.php"; ?>
 
     <div class="content">
         <div class="content-head">
@@ -94,6 +41,7 @@
                 </div>
             </div>
             <script>
+
             var xValues = [50,60,70,80,90,100,110,120,130,140];
 
             new Chart("visitorChart", {
@@ -101,11 +49,13 @@
                 data: {
                     labels: xValues,
                     datasets: [{
+                        label: '+Keranjang',
                         data: [160,170,170,190,200,270,400,500,600,700],
                         borderColor: "#f2f2f2",
                         backgroundColor: "#f2f2f2",
                         fill: false
                     },{
+                        label: 'Jumlah Pengunjung',
                         data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
                         borderColor: "#f2f2f250",
                         backgroundColor: "#f2f2f2",
@@ -113,7 +63,16 @@
                     }]
                 },
                 options: {
-                    legend: {display: false}
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: false,
+                            position: 'top'
+                        },
+                        title: {
+                            display: false,
+                        }
+                    }
                 }
             });
             new Chart("sellingChart", {
@@ -121,14 +80,24 @@
                 data: {
                     labels: xValues,
                     datasets: [{
+                        label: "Terjual",
                         data: [3,5,7,3,2,6,4,2,2,3],
                         backgroundColor: "#e46f0f",
                         fill: false
                     }]
                 },
                 options: {
-                    legend: {display: false}
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false,
+                        position: 'top'
+                    },
+                    title: {
+                        display: false,
+                    }
                 }
+            },
             });
             </script>
         </div>
