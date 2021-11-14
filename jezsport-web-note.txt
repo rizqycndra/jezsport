@@ -2,6 +2,7 @@
 Product Database
 
 id
+code
 name
 title
 category

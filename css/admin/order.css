@@ -1,0 +1,104 @@
+
+.order-item {
+    margin: 20px 0;
+}
+
+.order-tab {
+    display: flex;
+}
+
+.order-tab a {
+    cursor: pointer;
+    font: 16px f1;
+    padding: 10px 20px;
+}
+
+.order-tab a:hover {
+    background: var(--color1-3);
+}
+
+.order-tab-active {
+    background: var(--color1-4);
+    border-bottom: 1px solid var(--color4);
+}
+
+.order-id {
+    font: 24px f1;
+}
+
+.order-id span {
+    color: var(--color4);
+    font: 10px f1;
+}
+
+.order-shipping {
+    font: 16px f1;
+    color: var(--color4);
+}
+
+.order-desc,
+.order-product {
+    width: 100%;
+}
+
+.order-action {
+    width: 300px;
+}
+
+.order-action a {
+    border: 1px solid var(--color1-3);
+    width: 100%;
+    display: block;
+    border-radius: 7px;
+    background: var(--color1-3);
+    color: var(--color1);
+    padding: 7px 10px;
+    font: 16px f1;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 0;
+    transition: background 0.5s;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    -o-transition: background 0.5s;
+}
+
+.order-action a:hover {
+    background: none;
+}
+
+.order-desc p {
+    margin: 10px 0;
+}
+
+.order-product {
+    margin: 0 20px;
+}
+
+.order-product-item {
+    display: flex;
+    margin: 10px 0;
+}
+
+.order-product-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.order-product-item-desc {
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .order-tab {
+        flex-direction: column;
+    }
+    .order-product {
+        margin: 10px 0;
+    }
+}
