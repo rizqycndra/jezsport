@@ -12,6 +12,14 @@
             <span onclick="menuControl('show')" class="iconify display-mobile" data-icon="eva:menu-fill" data-height="30"></span>
             <h1>Order</h1>
         </div>
+        <div class="order">
+            <h3>Sudah Dibayar</h3>
+            <div class="order-list">
+                <div class="order-item">
+                    
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="../js/admin.js"></script>
