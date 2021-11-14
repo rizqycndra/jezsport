@@ -13,6 +13,7 @@
             <h1>Dashboard</h1>
         </div>
         <div class="col">
+            <h2>Aktivitas Hari Ini</h2>
             <div class="row">
                 <div class="box box-count-data">
                     <h3>RP 540.000</h3>
@@ -30,6 +31,7 @@
                     <a href="#">Lihat</a>
                 </div>
             </div>
+            <h2>Insight</h2>
             <div class="row">
                 <div class="box">
                     <p class="chart-title">Data Kunjungan</p>
@@ -42,7 +44,25 @@
             </div>
             <script>
 
-            var xValues = [50,60,70,80,90,100,110,120,130,140];
+            var xValues = [
+                <?php
+                $range = 14;
+                $dateNow = date("Y-m-d");
+                $date = date("Y-m-d", strtotime("+1 day", strtotime($dateNow)));
+                $end_date = date("Y-m-d", strtotime("+" . $range . " day", strtotime($dateNow)));
+                $i = 0;
+                $y = 0;
+
+                while (strtotime($date) <= strtotime($end_date)) {
+                    $i < $range - 1 ? $comma = "," : $comma = "";
+                    $date = date("Y-m-d", strtotime("-" . $range . " day", strtotime($date)));
+                    echo '"' . $date . '"' . $comma . "\n";
+                    $date = date("M-d", strtotime("+" . $range + 1 . " day", strtotime($date)));
+                    $i++;
+                    $y = 0;
+                }
+                ?>
+            ];
 
             new Chart("visitorChart", {
                 type: "line",
@@ -63,6 +83,10 @@
                     }]
                 },
                 options: {
+                    interaction: {
+                        intersect: false,
+                        mode: 'index',
+                    },
                     responsive: true,
                     plugins: {
                         legend: {
@@ -81,23 +105,28 @@
                     labels: xValues,
                     datasets: [{
                         label: "Terjual",
-                        data: [3,5,7,3,2,6,4,2,2,3],
+                        data: [3,5,7,3,2,6,4,2,2,3,5,7,3,2,6,4,2,2,3,5,7,3,2,6,4,2,2,3,5,3],
                         backgroundColor: "#e46f0f",
                         fill: false
                     }]
                 },
                 options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        display: false,
-                        position: 'top'
+                    interaction: {
+                        intersect: false,
+                        mode: 'index',
                     },
-                    title: {
-                        display: false,
+                    responsive: true,
+                    interaction: {
+                        intersect: false,
+                        mode: 'index',
+                    },
+                    plugins: {
+                        legend: {
+                            display: false,
+                            position: 'top'
+                        }
                     }
                 }
-            },
             });
             </script>
         </div>

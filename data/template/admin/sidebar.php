@@ -18,6 +18,10 @@
             <p>Order</p>
             <span class="sidebar-btn-label">3</span>
         </a>
+        <a href="insight" class="sidebar-btn" id="sidebarInsight">
+            <span class="iconify" data-icon="fluent:data-area-24-filled" data-height="25"></span>
+            <p>Insight</p>
+        </a>
         <div class="sidebar-content-gap"></div>
         <a href="product" class="sidebar-btn" id="sidebarProduct">
             <span class="iconify" data-icon="mdi:package" data-height="25"></span>
@@ -69,6 +73,9 @@
                     break;
                 case "setting":
                     $('#sidebarSettings').addClass('sidebar-btn-active')
+                    break;
+                case "insight":
+                    $('#sidebarInsight').addClass('sidebar-btn-active')
                     break;
             }
         })

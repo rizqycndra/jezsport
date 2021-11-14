@@ -12,6 +12,12 @@
     text-transform: uppercase;
 }
 
+.content h2 {
+    margin: 20px 0;
+    font: 24px f1;
+    text-transform: capitalize;
+}
+
 .content h3 {
     margin-bottom: 20px;
     font: 16px f1;

@@ -14,11 +14,10 @@
 }
 
 .order-tab a:hover {
-    background: var(--color1-3);
+    background: var(--color1-4);
 }
 
 .order-tab-active {
-    background: var(--color1-4);
     border-bottom: 1px solid var(--color4);
 }
 
