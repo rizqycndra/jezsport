@@ -5,3 +5,11 @@ function menuControl(action) {
         $('.sidebar').css('transform', 'translateX(-100%)');
     }
 }
+
+
+function tabSelect(tabSection) {
+    $('.order-tab-content').hide()
+    $('.order-tab-active').removeClass('order-tab-active')
+    $('#'+tabSection).show()
+    $('[tabselect*="'+tabSection+'"]').addClass('order-tab-active')
+}

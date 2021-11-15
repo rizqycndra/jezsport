@@ -1,0 +1,123 @@
+
+.product-item {
+    margin: 10px 0 !important;
+    display: flex;
+    justify-content: stretch;
+}
+
+.product-img {
+    width: 200px;
+}
+
+.product-img img {
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.product-desc {
+    width: 100%;
+    margin: 0 20px;
+}
+
+.product-desc h4 {
+    font: 24px f1;
+    margin-bottom: 10px;
+}
+
+.product-desc h5 {
+    font: 16px f2;
+    margin-bottom: 5px;
+    color: var(--color4);
+}
+
+.product-desc label {
+    color: var(--color4);
+    font: 16px f1;
+}
+
+.product-desc input {
+    margin-right: 20px;
+    outline: none;
+    text-align: center;
+    width: 50px;
+    font: 16px f1;
+    color: var(--color1);
+    background: none;
+    border: 0;
+    border-bottom: 1px solid var(--color4);
+}
+
+.product-desc p {
+    font: 16px f1;
+    margin-bottom: 10px;
+}
+
+.product-desc strike {
+    opacity: 0.4;
+}
+
+.product-action {
+    width: 200px;
+}
+
+.product-action p {
+    color: var(--color4);
+    margin-bottom: 10px;
+}
+
+.product-action a {
+    background: var(--color2-3);
+    border: 1px solid var(--color1-3);
+    text-align: center;
+    font: 16px f1;
+    color: var(--color1);
+    padding: 7px 10px;
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    transition: background 0.5s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    -o-transition: background 0.5s;
+}
+
+.product-action a:hover {
+    background: none;
+}
+
+.product-stock {
+    padding: 7px;
+    display: inline-block;
+}
+
+.product-stock p {
+    width: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .product-item {
+        flex-direction: column;
+    }
+    .product-img {
+        width: 100%;
+    }
+    .product-desc {
+        margin: 10px 0;
+    }
+    .product-action {
+        width: 100%;
+    }
+    .product-stock {
+        width: 50%:
+    }
+}

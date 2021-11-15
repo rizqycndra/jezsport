@@ -13,11 +13,11 @@
             <h1>Insight</h1>
         </div>
         <div class="col">
-            <div class="box">
+            <div class="box chart-box">
                 <p class="chart-title">Data Kunjungan</p>
                 <canvas id="visitorChart" height="100px"></canvas>
             </div>
-            <div class="box">
+            <div class="box chart-box">
                 <p class="chart-title">Data Penjualan</p>
                 <canvas id="sellingChart" height="100px"></canvas>
             </div>

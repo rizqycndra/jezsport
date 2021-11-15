@@ -13,9 +13,15 @@
             <h1>Order</h1>
         </div>
         <div class="order">
+            <div class="order-month">
+                <select name="" id="">
+                    <option value="november,2021">November, 2021</option>
+                    <option value="oktober,2021">Oktober, 2021</option>
+                </select>
+            </div>
             <div class="order-tab">
-                <a onclick="tabSelect('unpaid')" tabselect="unpaid">Belum Dibayar</a>
-                <a onclick="tabSelect('fullpaid')" tabselect="fullpaid">Sudah Dibayar</a>
+                <a onclick="tabSelect('unpaid')" tabselect="unpaid">Belum Dibayar <span>2</span></a>
+                <a onclick="tabSelect('fullpaid')" tabselect="fullpaid">Sudah Dibayar <span>1</span></a>
                 <a onclick="tabSelect('process')" tabselect="process">Diproses</a>
                 <a onclick="tabSelect('shipping')" tabselect="shipping">Diperjalanan</a>
                 <a onclick="tabSelect('success')" tabselect="success">Terkirim</a>
@@ -296,12 +302,6 @@
         tabSelect('unpaid')
     })
 
-    function tabSelect(tabSection) {
-        $('.order-tab-content').hide()
-        $('.order-tab-active').removeClass('order-tab-active')
-        $('#'+tabSection).show()
-        $('[tabselect*="'+tabSection+'"]').addClass('order-tab-active')
-    }
     </script>
 
 </body>

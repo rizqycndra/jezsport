@@ -1,56 +1,24 @@
 
-Product Database
+--Product Database
 
-id
-code
-name
-title
-category
-varian
-tag
-desc
-stock
-price
-discount
-view
-addcart
-sell
-date
+id code name title category varian tag desc stock price discount view addcart sell date
 
-Voucher Database
+--Voucher Database
 
-code
-discount
-expired
-used
-active
+code discount expired used active
 
-Transaction Database
+--Transaction Database
 
-sessionid
-trid
-customerid
-method
-paid
-paymentcode
-expired
-product
-date
+sessionid trid customerid method paid paymentcode expired product date
 
-Customer Database
+--Customer Database
 
-id
-name
-call
-email
-buyed
+id name call email buyed
 
-User Database
+--User Database
 
-id
-name
-username
-password
-email
-rule:admin
-date
+id name username password email rule:admin date
+
+--Insight Database
+
+year month visit addcart checkout success

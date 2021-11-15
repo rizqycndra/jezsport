@@ -4,6 +4,18 @@
 @import url(sidebar.css);
 @import url(content.css);
 @import url(order.css);
+@import url(product.css);
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 :root {
     --color1: #f2f2f2;
@@ -49,6 +61,10 @@ img {
 
 .display-mobile {
     display: none;
+}
+
+.chart-box {
+    margin: 10px 0 !important;
 }
 
 @media only screen and (max-width: 600px) {
