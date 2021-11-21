@@ -6,10 +6,13 @@ function menuControl(action) {
     }
 }
 
-
 function tabSelect(tabSection) {
     $('.order-tab-content').hide()
     $('.order-tab-active').removeClass('order-tab-active')
     $('#'+tabSection).show()
     $('[tabselect*="'+tabSection+'"]').addClass('order-tab-active')
+}
+
+function modalClose() {
+    $('.modal').hide()
 }

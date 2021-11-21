@@ -1,6 +1,7 @@
 
 @import url(../font.css);
 @import url(login.css);
+@import url(modal.css);
 @import url(sidebar.css);
 @import url(content.css);
 @import url(order.css);
@@ -25,6 +26,7 @@ input[type=number] {
     --color1-3: #f2f2f220;
     --color1-4: #f2f2f210;
     --color2: #252525;
+    --color2-1: #25252590;
     --color2-2: #25252550;
     --color2-3: #25252520;
     --color2-4: #25252508;
