@@ -6,6 +6,7 @@
 @import url(order.css);
 @import url(product.css);
 @import url(table.css);
+@import url(banner.css);
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

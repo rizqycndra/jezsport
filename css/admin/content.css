@@ -57,6 +57,10 @@
     -o-transition: background 0.3s;
 }
 
+.box-fit {
+    width: fit-content !important;
+}
+
 .box:first-child {
     margin-left: 0;
 }
@@ -168,7 +172,7 @@
 
 @media only screen and (max-width: 600px) {
     .content {
-        margin: 20px 10px;
+        margin: 20px 15px;
         padding: 0;
     }
     .content h1 {
