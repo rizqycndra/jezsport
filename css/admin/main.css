@@ -5,6 +5,7 @@
 @import url(content.css);
 @import url(order.css);
 @import url(product.css);
+@import url(table.css);
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -70,5 +71,8 @@ img {
 @media only screen and (max-width: 600px) {
     .display-mobile {
         display: block;
+    }
+    .display-desktop {
+        display: none;
     }
 }

@@ -12,19 +12,49 @@
             <span onclick="menuControl('show')" class="iconify display-mobile" data-icon="eva:menu-fill" data-height="30"></span>
             <h1>Product</h1>
         </div>
-        <div class="order-tab">
-                <a onclick="tabSelect('modernjersey'), productListRequest('modernjersey')" tabselect="modernjersey">Jersey Modern</a>
-                <a onclick="tabSelect('classicjersey'), productListRequest('classicjersey')" tabselect="classicjersey">Jersey Klasik</a>
-                <a onclick="tabSelect('accstuff'), productListRequest('accstuff')" tabselect="accstuff">Aksesoris</a>
-                <a onclick="tabSelect('otherstuff'), productListRequest('otherstuff')" tabselect="otherstuff">Lainnya</a>
-                <a onclick="tabSelect('soldstuff'), productListRequest('soldstuff')" tabselect="soldstuff" class="text-warning">Habis</a>
-            </div>
         <div class="product">
-            <div class="order-tab-content" id="modernjersey"></div>
-            <div class="order-tab-content" id="classicjersey"></div>
-            <div class="order-tab-content" id="accstuff"></div>
-            <div class="order-tab-content" id="otherstuff"></div>
-            <div class="order-tab-content" id="soldstuff"></div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="table-tn display-desktop"></th>
+                        <th>Nama Produk</th>
+                        <th class="display-desktop">Jenis</th>
+                        <th class="display-desktop">Harga</th>
+                        <th>SKU</th>
+                        <th>Stok</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="display-desktop"><img src="../img/product/00001.png" alt=""></td>
+                        <td>Real Madrid 21-22 Home Kit</td>
+                        <td class="display-desktop">Jersey</td>
+                        <td class="display-desktop">RP 100.000</td>
+                        <td>01RMHO2122, 1015</td>
+                        <td>2</td>
+                        <td><a href="product-detail">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td class="display-desktop"><img src="../img/product/00001.png" alt=""></td>
+                        <td>Real Madrid 21-22 Home Kit</td>
+                        <td class="display-desktop">Jersey</td>
+                        <td class="display-desktop">RP 100.000</td>
+                        <td>01RMHO2122, 1015</td>
+                        <td>2</td>
+                        <td><a href="product-detail">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td class="display-desktop"><img src="../img/product/00001.png" alt=""></td>
+                        <td>Real Madrid 21-22 Home Kit</td>
+                        <td class="display-desktop">Jersey</td>
+                        <td class="display-desktop">RP 100.000</td>
+                        <td>01RMHO2122, 1015</td>
+                        <td>2</td>
+                        <td><a href="product-detail">Edit</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
@@ -32,14 +62,7 @@
 
     <script>
 
-        $(window).ready(function(){
-            tabSelect('modernjersey')
-            productListRequest('modernjersey')
-        })
-
-        function productListRequest(requestType) {
-            $('#'+requestType).load('../data/admin/request-product-list.php?id='+requestType)
-        }
+    
 
     </script>
 

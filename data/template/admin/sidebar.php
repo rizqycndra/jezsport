@@ -65,13 +65,16 @@
                 case "product":
                     $('#sidebarProduct').addClass('sidebar-btn-active')
                     break;
+                case "product-detail":
+                    $('#sidebarProduct').addClass('sidebar-btn-active')
+                    break;
                 case "customer":
                     $('#sidebarCustomer').addClass('sidebar-btn-active')
                     break;
                 case "banner":
                     $('#sidebarBanner').addClass('sidebar-btn-active')
                     break;
-                case "setting":
+                case "settings":
                     $('#sidebarSettings').addClass('sidebar-btn-active')
                     break;
                 case "insight":
